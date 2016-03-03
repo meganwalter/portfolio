@@ -16,7 +16,7 @@ Project.prototype.toHtml = function() {
   return $newProject;
 };
 
-projects.forEach(function(obj)) {
+projects.forEach(function(obj) {
   myProjs.push(new Project(obj));
 });
 
