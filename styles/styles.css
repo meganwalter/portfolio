@@ -1,6 +1,6 @@
 body {
   background-image: url(../images/background-photo.jpg);
-  background-repeat:no-repeat;
+  /*background-repeat:no-repeat;*/
   background-position: center;
 }
 
@@ -8,11 +8,19 @@ body {
   display: none;
 }
 
+h1 {
+  background-color: hsla(360, 100%, 100%, 0.3);
+}
+
 p {
   font-size: 16px;
 }
 
+footer img{
+  height: 50px;
+}
+
 .article-body {
-  border: 2px, solid, white;
-  
+  background-color: hsla(360, 100%, 100%, 0.9);
+  margin-bottom: 4%;
 }
