@@ -1,3 +1,18 @@
+body {
+  background-image: url(../images/background-photo.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
 .template {
   display: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+.article-body {
+  border: 2px, solid, white;
+  
 }

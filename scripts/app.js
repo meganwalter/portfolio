@@ -8,10 +8,9 @@ function Project(articleObj) {
 
 Project.prototype.toHtml = function() {
   var $newProject = $('article.template').clone();
-  $newProject.find('h1').html(this.name);
+  $newProject.find('.article-title').text(this.name);
   $newProject.find('time[pubdate]').attr('datetime', this.pubdate);
   $newProject.find('.article-body').html(this.body);
-  $newProject.append('<hr>');
   $newProject.removeClass('template');
   return $newProject;
 };
