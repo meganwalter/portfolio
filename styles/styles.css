@@ -1,0 +1,25 @@
+body {
+  background-image: url(../images/background-photo.jpg);
+  background-position: center;
+}
+
+.template {
+  display: none;
+}
+
+h1 {
+  background-color: hsla(360, 100%, 100%, 0.3);
+}
+
+p {
+  font-size: 16px;
+}
+
+footer img{
+  height: 50px;
+}
+
+.article-body {
+  background-color: hsla(360, 100%, 100%, 0.9);
+  margin-bottom: 4%;
+}
