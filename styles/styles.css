@@ -1,5 +1,6 @@
 body {
   background-image: url(../images/background-photo.jpg);
+  background-size: 100%;
   background-position: center;
 }
 
@@ -11,6 +12,16 @@ h1 {
   background-color: hsla(360, 100%, 100%, 0.3);
 }
 
+#articles h1 {
+  border-bottom: 4px solid hsla(33, 19%, 28%, .7);
+}
+
+nav li a{
+  text-decoration: none;
+  color:#5E2626;
+  font-weight: bold;
+}
+
 p {
   font-size: 16px;
 }
@@ -20,6 +31,6 @@ footer img{
 }
 
 .article-body {
-  background-color: hsla(360, 100%, 100%, 0.9);
+  background-color: hsla(150, 100%, 100%, 0.7);
   margin-bottom: 4%;
 }
