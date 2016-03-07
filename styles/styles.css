@@ -12,13 +12,18 @@ h1 {
   background-color: hsla(360, 100%, 100%, 0.3);
 }
 
-#articles h1 {
+/*article h1{
   border-bottom: 4px solid hsla(33, 19%, 28%, .7);
 }
+
+.template header h1{
+  border-bottom: 0px solid hsla(33, 19%, 28%, 0);
+}*/
 
 nav li {
   list-style: none;
 }
+
 nav li a{
   text-decoration: none;
   color:#5E2626;
