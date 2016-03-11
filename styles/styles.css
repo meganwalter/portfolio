@@ -1,7 +1,8 @@
 body {
   background-image: url(../images/background-photo.jpg);
-  background-size: 100%;
+  background-size: cover 100%;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .template {
@@ -12,22 +13,25 @@ h1 {
   background-color: hsla(360, 100%, 100%, 0.3);
 }
 
-/*article h1{
-  border-bottom: 4px solid hsla(33, 19%, 28%, .7);
+nav li {
+  float:left;
+  padding-right: 8%;
+  list-style: none;
 }
 
-.template header h1{
-  border-bottom: 0px solid hsla(33, 19%, 28%, 0);
-}*/
-
-nav li {
-  list-style: none;
+nav li i{
+  color:#5E2626;
+  font-weight: bold;
+  text-shadow: 1px 0 0 hsla(360, 100%, 100%, 0.3), -1px 0 0 hsla(360, 100%, 100%, 0.3), 0 1px 0 hsla(360, 100%, 100%, 0.3), 0 -1px 0 hsla(360, 100%, 100%, 0.3), 1px 1px hsla(360, 100%, 100%, 0.3), -1px -1px 0 hsla(360, 100%, 100%, 0.3), 1px -1px 0 hsla(360, 100%, 100%, 0.3), -1px 1px 0 hsla(360, 100%, 100%, 0.3);
+  font-size: 1.2em;
 }
 
 nav li a{
   text-decoration: none;
   color:#5E2626;
   font-weight: bold;
+  text-shadow: 1px 0 0 hsla(360, 100%, 100%, 0.3), -1px 0 0 hsla(360, 100%, 100%, 0.3), 0 1px 0 hsla(360, 100%, 100%, 0.3), 0 -1px 0 hsla(360, 100%, 100%, 0.3), 1px 1px hsla(360, 100%, 100%, 0.3), -1px -1px 0 hsla(360, 100%, 100%, 0.3), 1px -1px 0 hsla(360, 100%, 100%, 0.3), -1px 1px 0 hsla(360, 100%, 100%, 0.3);
+  font-size: 1.2em;
 }
 
 p {
@@ -41,4 +45,15 @@ footer img{
 .article-body {
   background-color: hsla(150, 100%, 100%, 0.7);
   margin-bottom: 4%;
+}
+
+#about p {
+  background-color: hsla(150, 100%, 100%, 0.7);
+  margin-bottom: 4%;
+}
+
+@media all and (min-width: 640px) {
+  body {
+    background-size: 100%;
+  }
 }
