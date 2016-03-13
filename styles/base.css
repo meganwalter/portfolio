@@ -5,18 +5,12 @@ body {
   background-repeat: no-repeat;
 }
 
-.template {
-  display: none;
-}
-
 h1 {
   background-color: hsla(360, 100%, 100%, 0.3);
   font-family: 'Quicksand', sans-serif;
 }
 
 nav li {
-  float:left;
-  padding-right: 8%;
   list-style: none;
   font-family: 'Oxygen', sans-serif;
 }
@@ -41,10 +35,6 @@ p, li {
   font-family: 'Oxygen', sans-serif;
 }
 
-footer img{
-  height: 50px;
-}
-
 .article-body {
   background-color: hsla(150, 100%, 100%, 0.7);
   margin-bottom: 4%;
@@ -54,10 +44,4 @@ footer img{
   background-color: hsla(150, 100%, 100%, 0.7);
   margin-bottom: 4%;
 
-}
-
-@media all and (min-width: 640px) {
-  body {
-    background-size: 100%;
-  }
 }

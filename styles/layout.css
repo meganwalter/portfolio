@@ -1,0 +1,36 @@
+nav li {
+  display: none;
+}
+
+.menu {
+  color:#5E2626;
+  font-weight: bold;
+  text-shadow: 1px 0 0 hsla(360, 100%, 100%, 0.3), -1px 0 0 hsla(360, 100%, 100%, 0.3), 0 1px 0 hsla(360, 100%, 100%, 0.3), 0 -1px 0 hsla(360, 100%, 100%, 0.3), 1px 1px hsla(360, 100%, 100%, 0.3), -1px -1px 0 hsla(360, 100%, 100%, 0.3), 1px -1px 0 hsla(360, 100%, 100%, 0.3), -1px 1px 0 hsla(360, 100%, 100%, 0.3);
+  font-size: 1.2em;
+}
+
+.main-nav:hover li {
+  display: block;
+}
+
+.template {
+  display: none;
+}
+
+footer img{
+  height: 50px;
+}
+
+@media all and (min-width: 640px) {
+  body {
+    background-size: 100%;
+  }
+  nav li {
+    display: block;
+    float:left;
+    padding-right: 8%;
+  }
+  .menu {
+    display: none;
+  }
+}
