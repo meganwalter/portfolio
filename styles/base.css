@@ -30,15 +30,18 @@ nav li a{
   font-family: 'Oxygen', sans-serif;
 }
 
-nav li a{
-  text-decoration: none;
-  color:#5E2626;
-  text-shadow: 1px 0 0 hsla(360, 100%, 100%, 0.3), -1px 0 0 hsla(360, 100%, 100%, 0.3), 0 1px 0 hsla(360, 100%, 100%, 0.3), 0 -1px 0 hsla(360, 100%, 100%, 0.3), 1px 1px hsla(360, 100%, 100%, 0.3), -1px -1px 0 hsla(360, 100%, 100%, 0.3), 1px -1px 0 hsla(360, 100%, 100%, 0.3), -1px 1px 0 hsla(360, 100%, 100%, 0.3);
-  font-size: 1.2em;
+p, li {
+  font-size: 16px;
   font-family: 'Oxygen', sans-serif;
 }
 
 .article-body {
   background-color: hsla(150, 100%, 100%, 0.7);
   margin-bottom: 4%;
+}
+
+#about p {
+  background-color: hsla(150, 100%, 100%, 0.7);
+  margin-bottom: 4%;
+
 }
