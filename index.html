@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="styles/base.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="styles/layout.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="styles/state.css" media="screen" title="no title" charset="utf-8">
+    <script id="project-template" type="text/x-handlebars-template">
+      <article class="">
+        <header>
+          <h1 class='article-title eight columns offset-by-two'>{{name}}<h1>
+          <time pubdate datetime="{{pubdate}}"></time>
+        <header>
+        <section class="article-body eight columns offset-by-two">{{{body}}}
+        </section>
+      </article>
+    </script>
   </head>
   <body>
     <nav class="main-nav">
@@ -26,15 +36,7 @@
       <h1 class="eight columns offset-by-two">Megan Elizabeth</h1>
     </header>
     <main>
-      <section class="tab-content" id="articles">
-      <article class="template">
-        <header>
-          <h1 class='article-title eight columns offset-by-two'>Title<h1>
-          <time pubdate datetime="2016-02-02"></time>
-        <header>
-        <section class="article-body eight columns offset-by-two">
-        </section>
-      </article>
+    <section class="tab-content" id="articles">
     </section>
     <section class="tab-content eight columns offset-by-two" id="about">
       <h1>Sample Text</h1>
@@ -48,6 +50,7 @@
       <a href="https://github.com/meganwalter">My Github</a>
     </footer>
     <script src="http://code.jquery.com/jquery-2.2.1.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <script src="scripts/articles.js" charset="utf-8"></script>
     <script src="scripts/app.js" charset="utf-8"></script>
     <script src="scripts/articleView.js" charset="utf-8"></script>
