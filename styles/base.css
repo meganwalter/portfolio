@@ -1,13 +1,14 @@
 body {
   background-image: url(../images/background-photo.jpg);
-  background-size: cover 100%;
-  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 300%;
 }
 
 h1 {
   background-color: hsla(360, 100%, 100%, 0.3);
   font-family: 'Quicksand', sans-serif;
+  text-align: center;
 }
 
 nav li {
@@ -43,5 +44,9 @@ p, li {
 #about p {
   background-color: hsla(150, 100%, 100%, 0.7);
   margin-bottom: 4%;
+}
 
+#pretty-line {
+  height: .2em;
+  background-color: hsla(150, 100%, 100%, 0.7);
 }
