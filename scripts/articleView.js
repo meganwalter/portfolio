@@ -6,7 +6,7 @@ articleView.mainNav = function() {
     $('#' + $(this).data('content')).fadeIn(500);
   });
 
-  $('nav ul li:first').click();
+  $('nav ul li:last').click();
 };
 
 $(document).ready(function() {
