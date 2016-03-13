@@ -5,7 +5,7 @@ body {
   background-size: 300%;
 }
 
-h1 {
+h1, h2 {
   background-color: hsla(360, 100%, 100%, 0.3);
   font-family: 'Quicksand', sans-serif;
   text-align: center;
@@ -38,7 +38,6 @@ p, li {
 
 .article-body {
   background-color: hsla(150, 100%, 100%, 0.7);
-  margin-bottom: 4%;
 }
 
 #about p {

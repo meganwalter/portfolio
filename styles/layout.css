@@ -14,21 +14,15 @@ nav li {
   display: block;
 }
 
-.template {
-  display: none;
-}
-
 #pretty-line {
   margin-top: 2%;
 }
 
-footer img{
-  height: 50px;
-}
-
 @media only screen and (min-width: 640px) {
   body {
-    background-size: 100%;
+    background-size: 110%;
+    background-color: black;
+    background-repeat: repeat-y;
     background-attachment: fixed;
   }
   nav li {
@@ -36,6 +30,7 @@ footer img{
     float: right;
     padding-right: 2%;
     font-size: 1em;
+    margin-top: auto;
   }
   .menu {
     display: none;
