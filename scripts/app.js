@@ -7,12 +7,9 @@ function Project(articleObj) {
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
-  $newProject.find('.article-title').text(this.name);
-  $newProject.find('time[pubdate]').attr('datetime', this.pubdate);
-  $newProject.find('.article-body').html(this.body);
-  $newProject.removeClass('template');
-  return $newProject;
+  var projectTemp = $('#project-template').html();
+  var compiledTemp = Handlebars.compile(projectTemp);
+  return compiledTemp(this);
 };
 
 projects.forEach(function(obj) {
