@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="vendors/font-awesome-4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/base.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="styles/layout.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/modules.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="styles/state.css" media="screen" title="no title" charset="utf-8">
     <script id="project-template" type="text/x-handlebars-template">
-      <article class="">
+      <article class="one-half column">
         <header>
-          <h2 class='article-title'>{{name}}<h2>
-          <time pubdate datetime="{{pubdate}}"></time>
+          <h2 class='article-title'>{{name}}</h2>
         <header>
-        <section class="article-body">{{{body}}}
-        </section>
+        <section class="article-image"><img src="{{img}}" alt="" /></section>
+        <section class="article-body">{{{body}}}</section>
       </article>
     </script>
   </head>
@@ -39,10 +39,11 @@
         </header>
         <div id="pretty-line" class="four columns offset-by-four"></div>
       </section>
-      <section class="tab-content ten columns offset-by-one" id="articles">
+      <section class="tab-content  ten columns offset-by-one" id="articles">
         <header>
           <h1 class="">MY PROJECTS</h1>
         </header>
+        <section class="" id="article-view"></section>
       </section>
       <section class="tab-content" id="about">
         <header>
