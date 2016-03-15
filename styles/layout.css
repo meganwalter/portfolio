@@ -18,6 +18,11 @@ nav li {
   margin-top: 2%;
 }
 
+.article-image img {
+  margin: 0 auto;
+  display: block;
+}
+
 @media only screen and (min-width: 640px) {
   body {
     background-size: 130%;

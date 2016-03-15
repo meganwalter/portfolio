@@ -3,6 +3,7 @@ var myProjs = [];
 function Project(articleObj) {
   this.name = articleObj.name;
   this.pubdate = articleObj.pubdate;
+  this.img = articleObj.img;
   this.body = articleObj.body;
 }
 
@@ -17,5 +18,5 @@ projects.forEach(function(obj) {
 });
 
 myProjs.forEach(function(a) {
-  $('#articles').append(a.toHtml());
+  $('#article-view').append(a.toHtml());
 });
