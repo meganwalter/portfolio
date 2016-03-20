@@ -5,10 +5,20 @@ body {
   background-size: 300%;
 }
 
-h1, h2 {
-  background-color: hsla(360, 100%, 100%, 0.3);
+h2 {
+  text-shadow: 1px 0 0 hsla(360, 100%, 100%, 0.3), -1px 0 0 hsla(360, 100%, 100%, 0.3), 0 1px 0 hsla(360, 100%, 100%, 0.3), 0 -1px 0 hsla(360, 100%, 100%, 0.3), 1px 1px hsla(360, 100%, 100%, 0.3), -1px -1px 0 hsla(360, 100%, 100%, 0.3), 1px -1px 0 hsla(360, 100%, 100%, 0.3), -1px 1px 0 hsla(360, 100%, 100%, 0.3);
   font-family: 'Quicksand', sans-serif;
   text-align: center;
+  font-size: 3em;
+  padding-top: .5em;
+}
+
+h1 {
+  text-shadow: 1px 0 0 hsla(360, 100%, 100%, 0.3), -1px 0 0 hsla(360, 100%, 100%, 0.3), 0 1px 0 hsla(360, 100%, 100%, 0.3), 0 -1px 0 hsla(360, 100%, 100%, 0.3), 1px 1px hsla(360, 100%, 100%, 0.3), -1px -1px 0 hsla(360, 100%, 100%, 0.3), 1px -1px 0 hsla(360, 100%, 100%, 0.3), -1px 1px 0 hsla(360, 100%, 100%, 0.3);
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 5.5em;
+  padding-top: 1em;
 }
 
 nav li {
