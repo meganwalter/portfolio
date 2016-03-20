@@ -21,6 +21,17 @@ nav li {
 .article-image img {
   margin: 0 auto;
   display: block;
+  height: 9em;
+}
+
+#contact img{
+  display: block;
+  margin: 0 auto;
+  height: 11em;
+}
+
+.contact-icon img:hover{
+  background-color: rgba(215, 0, 0, 0.5);
 }
 
 @media only screen and (min-width: 640px) {
