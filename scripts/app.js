@@ -1,5 +1,3 @@
-var myProjs = [];
-
 function Project(articleObj) {
   this.name = articleObj.name;
   this.pubdate = articleObj.pubdate;
@@ -7,16 +5,37 @@ function Project(articleObj) {
   this.body = articleObj.body;
 }
 
+Project.all = [];
+
 Project.prototype.toHtml = function() {
   var projectTemp = $('#project-template').html();
   var compiledTemp = Handlebars.compile(projectTemp);
   return compiledTemp(this);
 };
 
-projects.forEach(function(obj) {
-  myProjs.push(new Project(obj));
-});
+Project.loadAll = function(projects) {
 
-myProjs.forEach(function(a) {
-  $('#article-view').append(a.toHtml());
-});
+  projects.forEach(function(obj) {
+    Project.all.push(new Project(obj));
+  });
+  Project.all.forEach(function(a) {
+    $('#article-view').append(a.toHtml());
+  });
+};
+
+Project.fetchAll = function() {
+  console.log("this works");
+  if (localStorage.projects) {
+    Project.loadAll(JSON.parse(localStorage.projects));
+  } else {
+    $.getJSON('../data/articles.json', function(data) {
+      localStorage.setItem('projects', JSON.stringify(data));
+      Project.loadAll(data);
+      console.log(data);
+    }).fail(function(){
+      console.log('fail');
+    }).done(function() {
+      console.log('done');
+    });
+  }
+};
