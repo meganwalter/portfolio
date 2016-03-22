@@ -9,6 +9,7 @@ articleView.mainNav = function() {
   $('nav ul li:last').click();
 };
 
-$(document).ready(function() {
+$(document).ready(function () {
+
   articleView.mainNav();
 });
