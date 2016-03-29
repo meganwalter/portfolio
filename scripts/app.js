@@ -33,16 +33,13 @@
 
   Skills.months = function() {
     Skills.all.map(function(skill) {
-      console.log(skill.years);
       return skill.years;
     }).reduce(function(months, year) {
       months.push(year * 12);
-      console.log(months);
       return months;
     }, []);
   };
-
-  Skills.months();
+  //the skills.months function is not being used, but I was satisfying a requirement of Portfolio assignment 07
 
   Skills.getSkills = function() {
     console.log("this works");
