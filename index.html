@@ -13,12 +13,20 @@
     <link rel="stylesheet" href="styles/modules.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="styles/state.css" media="screen" title="no title" charset="utf-8">
     <script id="project-template" type="text/x-handlebars-template">
-      <article class="one-half column">
+      <article class="">
         <header>
           <h2 class='article-title'>{{name}}</h2>
         <header>
         <section class="article-image"><img src="{{img}}" alt="" /></section>
         <section class="article-body">{{{body}}}</section>
+      </article>
+    </script>
+    <script id="skills-template" type="text/x-handlebars-template">
+      <article class="">
+        <header>
+          <h2 class='skill-title'>{{skill}}</h2>
+        <header>
+        <section class="skills-body"><p>years: {{years}}</p></section>
       </article>
     </script>
   </head>
@@ -29,6 +37,7 @@
         <li data-content="contact"><i class="fa fa-heart-o"></i><a href="#"> Contact</a></li>
         <li data-content="about"><i class="fa fa-heart-o"></i><a href="#"> About Me</a></li>
         <li data-content="articles"><i class="fa fa-heart-o"></i><a href="#"> Projects</a></li>
+        <li data-content="skills"><i class="fa fa-heart-o"></i><a href="#"> Skills</a></li>
         <li data-content="home"><i class="fa fa-heart-o"></i><a href="#"> Home</a></li>
       </ul>
     </nav>
@@ -43,7 +52,13 @@
         <header>
           <h1 class="">MY PROJECTS</h1>
         </header>
-        <section class="" id="article-view"></section>
+      <section class="" id="article-view"></section>
+      </section>
+      <section class="tab-content  ten columns offset-by-one" id="skills">
+        <header>
+          <h1 class="">SKILLS</h1>
+        </header>
+      <section class="" id="skills-page"></section>
       </section>
       <section class="tab-content" id="about">
         <header>
@@ -67,6 +82,8 @@
     <script src="scripts/articleView.js" charset="utf-8"></script>
     <script>
       Project.fetchAll();
+      Skills.getSkills();
+      articleView.mainNav();
     </script>
   </body>
 </html>

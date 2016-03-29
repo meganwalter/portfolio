@@ -1,15 +1,16 @@
-var articleView = {};
+(function(module){
 
-articleView.mainNav = function() {
-  $('nav').on('click', 'li', function() {
-    $('.tab-content').hide();
-    $('#' + $(this).data('content')).fadeIn(500);
-  });
+  var articleView = {};
 
-  $('nav ul li:last').click();
-};
+  articleView.mainNav = function() {
+    $('nav').on('click', 'li', function() {
+      $('.tab-content').hide();
+      $('#' + $(this).data('content')).fadeIn(500);
+    });
 
-$(document).ready(function () {
+    $('nav ul li:last').click();
+  };
 
-  articleView.mainNav();
-});
+  module.articleView = articleView;
+
+})(window);
