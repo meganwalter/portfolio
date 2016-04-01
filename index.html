@@ -34,11 +34,11 @@
     <nav class="main-nav ten columns offset-by-two">
     <i class="fa fa-bars menu"></i>
       <ul class="tab ten columns offset-by-two tabs">
-        <li data-content="contact"><i class="fa fa-heart-o"></i><a href="#"> Contact</a></li>
-        <li data-content="about"><i class="fa fa-heart-o"></i><a href="#"> About Me</a></li>
-        <li data-content="articles"><i class="fa fa-heart-o"></i><a href="#"> Projects</a></li>
-        <li data-content="skills"><i class="fa fa-heart-o"></i><a href="#"> Skills</a></li>
-        <li data-content="home"><i class="fa fa-heart-o"></i><a href="#"> Home</a></li>
+        <li data-content="contact"><i class="fa fa-heart-o"></i><a href="/contact"> Contact</a></li>
+        <li data-content="about"><i class="fa fa-heart-o"></i><a href="/about"> About Me</a></li>
+        <li data-content="articles"><i class="fa fa-heart-o"></i><a href="/projects"> Projects</a></li>
+        <li data-content="skills"><i class="fa fa-heart-o"></i><a href="/skills"> Skills</a></li>
+        <li data-content="home"><i class="fa fa-heart-o"></i><a href="/"> Home</a></li>
       </ul>
     </nav>
     <main>
@@ -75,15 +75,17 @@
         <a class="contact-icon" href="#"><img src="images/linkedin.png" alt="" /></a>
       </section>
     </main>
+    <script src="vendors/page.js" charset="utf-8"></script>
     <script src="http://code.jquery.com/jquery-2.2.1.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <!-- <script src="data/articles.json" charset="utf-8"></script> -->
     <script src="scripts/app.js" charset="utf-8"></script>
-    <script src="scripts/articleView.js" charset="utf-8"></script>
+    <!-- <script src="scripts/articleView.js" charset="utf-8"></script> -->
+    <script src="scripts/projectsController.js" charset="utf-8"></script>
+    <script src="scripts/skillsController.js" charset="utf-8"></script>
+    <script src="scripts/spa-controller.js" charset="utf-8"></script>
     <script>
-      Project.fetchAll();
-      Skills.getSkills();
-      articleView.mainNav();
+      home();
     </script>
   </body>
 </html>
