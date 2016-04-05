@@ -6,7 +6,7 @@
 
   repos.getRepos = function(callback) {
 
-    $ajax({
+    $.ajax({
       url: 'https://api.github.com/user/repos',
       type: 'GET',
       headers: {
@@ -14,8 +14,7 @@
       },
       success: function(data) {
         console.log(data);
-        repos.all.push(data);
-        callback();
+        repos.all = data;
       },
 
       error: function(request, status, error) {
@@ -24,7 +23,12 @@
       },
     });
 
-  }
+    repos.with = function(attr) {
+    return repos.all.filter(function(repo) {
+      return repo[attr];
+    });
+    };
+  };
 
   module.repos = repos;
 
