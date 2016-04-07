@@ -7,11 +7,8 @@
   repos.getRepos = function(callback) {
 
     $.ajax({
-      url: 'https://api.github.com/user/repos',
+      url: 'github/user/repos',
       type: 'GET',
-      headers: {
-        'Authorization': 'token ' + repoToken
-      },
       success: function(data) {
         console.log(data);
         repos.all = data;
